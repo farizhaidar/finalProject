@@ -8,6 +8,13 @@
     background-color: rgb(239, 239, 235);
 }
 
+.background2{
+    background-image: url("../picture/PNJ.jpg");
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+    background-size: cover;
+    
+}
+
 .myImg{
     height: 650px;
 }

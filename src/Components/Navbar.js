@@ -14,7 +14,7 @@ function Navbar() {
               <li><a href="/" className="text-white hover:text-sky-700 transition-colors duration-300">Home</a></li>
               <li><a href="/TikTalks" className="text-white hover:text-sky-700 transition-colors duration-300">TikTalks</a></li>
               <li><a href="/About" className="text-white hover:text-sky-700 transition-colors duration-300">About</a></li>
-              <li><a href="/" className="text-white hover:text-sky-700 transition-colors duration-300">Contact</a></li>
+              <li><a href="/Members" className="text-white hover:text-sky-700 transition-colors duration-300">Members</a></li>
             </ul>
           </div>
         </div>

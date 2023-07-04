@@ -10,6 +10,7 @@ const TikTalks = () => {
   // Fungsi untuk menambahkan post baru
   const addPost = () => {
     const newPostObj = {
+      id: Math.random().toString(),
       content: newPost,
       likes: 0,
       comments: [],
@@ -56,13 +57,13 @@ const TikTalks = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Author Forum</h1>
+    <div className="container mx-auto p-4 flex-1/2" >
+      <h1 className="text-2xl font-bold mb-4">TikTalks</h1>
 
       {/* Formulir untuk posting baru */}
       <div className="mb-4">
         <textarea
-          className="w-full p-2 border border-gray-300 rounded"
+          className="w-full p-2 border border-gray-500 rounded"
           placeholder="Tulis postingan baru..."
           value={newPost}
           onChange={(e) => setNewPost(e.target.value)}
@@ -78,14 +79,28 @@ const TikTalks = () => {
       {/* Daftar postingan */}
       <div>
         {posts.map((post) => (
-          <div key={post.id} className="mb-4">
+          <div key={post.id} className="mb-4 p-7 bg-white shadow rounded">
             <p>{post.content}</p>
             <div className="flex items-center mt-2">
               <button
-                className="mr-2 text-blue-500"
+                className="mr-2 text-blue-500 flex items-center"
                 onClick={() => addLike(post.id)}
               >
-                Like ({post.likes})
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  className="w-4 h-4 mr-1"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                {post.likes}
               </button>
               <button className="mr-2 text-blue-500">Comment</button>
             </div>
@@ -110,25 +125,26 @@ const TikTalks = () => {
       </div>
 
       {/* Recent Activity */}
-      <div className="mt-8">
+      <div className="mt-8 absolute top-20 right-0">
         <h2 className="text-xl font-bold mb-4">Recent Activity</h2>
-        <div>
+        <div className="flex items-center mb-4 justify-between">
           <input
-            className="w-full p-2 border border-gray-300 rounded"
+            className="p-2 border border-gray-300 rounded"
             placeholder="Cari postingan..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
           <button
-            className="bg-blue-500 text-white px-4 py-2 rounded mt-2"
+            className="bg-blue-500 text-white px-4 py-2 rounded ml-4"
             onClick={searchPosts}
           >
             Search
           </button>
         </div>
+
         <div className="mt-4">
           {recentPosts.map((post) => (
-            <div key={post.id}>
+            <div key={post.id} className="p-4 bg-white shadow rounded mb-4">
               <p>{post.content}</p>
               <hr />
             </div>
@@ -139,5 +155,4 @@ const TikTalks = () => {
   );
 };
 
-
-export default TikTalks
+export default TikTalks;
