@@ -9,8 +9,8 @@ import like from '../picture/thumbs-up.svg'
 const Home = () => {
     return(
       <div className="h-screen">
-      
-        <div className="background1 container mx-auto p-4 h-full border">
+        <div className="background1 container mt-0 p-0 h-full border">
+          <marquee direction="left" className="bg-black text-white pb-0 pt-0 w-screen border border-black">DUA TIGA TUTUP BOTOL</marquee>
           <div className="h-screen flex items-center">
             <div className="flex-1 ">
               <h1 className="text-stone-800 text-8xl font-bold mb-4 text-center ml-auto">TIK</h1>
