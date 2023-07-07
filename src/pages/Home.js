@@ -71,7 +71,7 @@ const Home = () => {
                     </tr>
                     <tr className="border-b border-black">
                     <td className="text-black pt-4 pb-4"><span className='text-3xl'>20</span> July</td>
-                      <td className="text-black pt-4 pb-4">TIK FEST</td>
+                      <td className="text-black pt-4 pb-4">p</td>
                     </tr>
 
                     <tr className="border-b border-black">
