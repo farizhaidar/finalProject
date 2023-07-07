@@ -20,8 +20,8 @@ const About = () => {
         <div className="w-full md:w-1/2 pl-4 ">
           <h2 className="text-2xl font-bold mb-2">Our Story</h2>
           <p className="mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            lobortis odio nec turpis semper fermentum. Morbi vitae nunc
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sedfdd
+            lobortis odio nec turpis semper fermentum. Morbi vitae nunc 
             tristique, cursus odio vitae, gravida orci. Sed sed ultrices
             augue, id fermentum nisi. Nam tristique mi vel neque commodo, id
             finibus magna accumsan. Cras bibendum mi risus, et mattis nulla
