@@ -71,37 +71,42 @@ const Home = () => {
                     </tr>
                     <tr className="border-b border-black">
                     <td className="text-black pt-4 pb-4"><span className='text-3xl'>20</span> July</td>
-                      <td className="text-black pt-4 pb-4">hlo</td>
+                      <td className="text-black pt-4 pb-4">TIK FEST</td>
                     </tr>
 
                     <tr className="border-b border-black">
                     <td className="text-black pt-4 pb-4"><span className='text-3xl'>12</span> SEPT</td>
-                      <td className="text-black pt-4 pb-4">p</td>
+                      <td className="text-black pt-4 pb-4">FINAL EXAM</td>
                     </tr>
+                    <tr className="border-b border-black">
+                      <td className="text-black pt-4 pb-4"><span className='text-3xl'>25</span> July</td>
+                      <td className="text-black-white pt-4 pb-4">UJIAN PERBAIKAN</td>
+                    </tr>
+                    <tr className="border-b border-black">
+                      <td className="text-black pt-4 pb-4"><span className='text-3xl'>1-4</span> AUGUST</td>
+                      <td className="text-black-white pt-4 pb-4">EVALUASI NILAI SEMESTER</td>
+                    </tr>
+                    <tr className="border-b border-black">
+                      <td className="text-black pt-4 pb-4"><span className='text-3xl'>10</span> AUGUST</td>
+                      <td className="text-black-white pt-4 pb-4">LIBURAN SEMESTER GENAP</td>
+                    </tr>
+                    <tr className="border-b border-black">
+                      <td className="text-black pt-4 pb-4"><span className='text-3xl'>14-25</span> AUGUST</td>
+                      <td className="text-black-white pt-4 pb-4">DAFTAR ULANG SEMESTER GANJIL</td>
+                    </tr>
+                    <tr className="border-b border-black">
+                      <td className="text-black pt-4 pb-4"><span className='text-3xl'>17</span> AUGUST</td>
+                      <td className="text-black-white pt-4 pb-4">PENDAFTARAN PKKP</td>
+                    </tr>
+                    <tr className="border-b border-black">
+                      <td className="text-black pt-4 pb-4"><span className='text-3xl'>11</span> SEPT</td>
+                      <td className="text-black-white pt-4 pb-4">AWAL PERKULIAHAN SEMESTER GANJIL</td>
+                    </tr>
+
                   </tbody>
                 </table>
               </div>
-              <div className='flex justify-between mt-10 mb-10'>
-                <div className='mx-10 border border-black p-10'>
-                  <h1 className='font-semibold mb-5'>tempat favorit</h1>
-                  <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-                  <div className='mt-5'>
-                    
-                      <img src={like} className='cursor-pointer'/>
-                    
-                  </div>
-                </div>
-
-                <div className='mx-10 border border-black p-10'>
-                  <h1 className='font-semibold mb-5'>tempat favorit</h1>
-                  <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-                  <img src={like} className='cursor-pointer pt-4'/>
-                </div>
-              </div>
+            
               
             </section>
           </div>

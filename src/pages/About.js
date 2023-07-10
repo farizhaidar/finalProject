@@ -4,7 +4,7 @@ import p2 from "../picture/bu anita.png"
 
 const About = () => {
   return (
-    <div className="container mx-auto py-4 h-auto w-screen background1">
+    <div className="mx-auto py-4 h-auto w-screen background1">
       <div>
         <h1 className="text-4xl font-bold mb-4 pl-4">About TIK</h1>
 
