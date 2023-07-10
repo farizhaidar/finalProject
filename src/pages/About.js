@@ -35,7 +35,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className='container bg-gray-900 h-auto w-screen px-0'>
+        <div className='bg-gray-900 h-auto w-screen px-0'>
           <div className='flex-col items-center justify-center h-auto'>
             <div className='w-50 m-16 mb-0 '>
               <img src={p2} alt='' className='rounded-full w-1/6 mx-auto pt-8' />
@@ -44,9 +44,9 @@ const About = () => {
             </div>
 
           </div>
-          <div className='m-16 mr-96 ml-96 text-center text-white pb-8'>
-            <p>Menjabat sebagai ketua jurusan sejak 1998, beliau lolos dari amukan pribumi karena mengaku sebagai pribumi padahal punya toko
-              klontong di mangga dua.</p>
+          <div className='m-16 mr-60 ml-60 text-center text-white pb-8'>
+            <p className='mb-7'>Beliau merupakan seorang yang memiliki prestasi gemilang di bidang pendidikan dan teknologi. Sebagai Ketua Jurusan TIK di Politeknik Negeri Jakarta, beliau memiliki pengalaman dan pengetahuan yang luas dalam memimpin dan mengembangkan program studi tersebut.</p>
+            <p>Beliau memulai perjalanan pendidikan di SMA Negeri 1 Sooko Mojokerto pada tahun 1994-1997, di mana beliau telah menunjukkan dedikasi dan keunggulan akademik sejak saat itu. Setelah lulus dari SMA, beliau melanjutkan pendidikan tinggi di Institut Teknologi Sepuluh November (ITS), di mana beliau berhasil menyelesaikan gelar S1 dan S2. Beliau tidak berhenti di tingkat S2 dan memutuskan untuk melanjutkan pendidikan doktoral di Universitas Indonesia (UI).</p>     
           </div>
         </div>
 
