@@ -57,7 +57,7 @@ const TikTalks = () => {
   };
 
   return (
-    <div className="container mx-auto p-4 flex-1/2" >
+    <div className="container mx-auto p-4 flex-1/2 h-screen" >
       <h1 className="text-2xl font-bold mb-4">TikTalks</h1>
 
       {/* Formulir untuk posting baru */}
