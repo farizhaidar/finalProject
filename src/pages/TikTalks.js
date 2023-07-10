@@ -53,8 +53,13 @@ const TikTalks = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div className="mx-auto p-12 bg-neutral-200 min-h-screen">
       <h1 className="text-3xl font-bold mb-7 text-neutral-500"><span className=' text-5xl text-neutral-900'>AUTHOR</span> FORUM</h1>
+=======
+    <div className="container mx-auto p-4 flex-1/2 h-screen" >
+      <h1 className="text-2xl font-bold mb-4">TikTalks</h1>
+>>>>>>> 01bd4e2edba74675352bc7c147ca198d6b91fade
 
       <div className="flex flex-wrap ">
         <div className="w-full md:w-2/3 pr-4 mb-6 mt-9">

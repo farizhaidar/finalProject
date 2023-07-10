@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import TikTalks from './pages/TikTalks';
 import Members from './pages/Members';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
         <Route path="/TikTalks" element= {<TikTalks/> }></Route>
         <Route path="/About" element= {<About/> }></Route>
         <Route path="/Members" element= {<Members/> }></Route>
+       
       </Routes>
-
+      <Footer/>
     </div>
     
   );
