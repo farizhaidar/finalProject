@@ -4,11 +4,7 @@ import p2 from "../picture/bu anita 3.jpg"
 
 const About = () => {
   return (
-<<<<<<< HEAD
     <div className="mx-auto py-4 h-auto w-screen background1">
-=======
-    <div className="container mx-auto h-auto w-screen background1">
->>>>>>> 01bd4e2edba74675352bc7c147ca198d6b91fade
       <div>
         <section>
           
