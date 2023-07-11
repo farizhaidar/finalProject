@@ -5,25 +5,18 @@ import p5 from '../picture/info3.jpg';
 import p4 from '../picture/gambar3.jpg'
 import "../style/style.css" ;
 import like from '../picture/thumbs-up.svg'
+import Carousel from '../Components/Carousel';
 
 
 const Home = () => {
     return(
       <div className="">
-       
-        <div className="bg-../picture/PNJ.jpg container mt-0 p-0 h-full border">
-          <marquee direction="left" className="bg-black text-white pb-0 pt-0 w-screen border border-black">DUA TIGA TUTUP BOTOL</marquee>
-          <div className="h-screen flex items-center">
-            <div className="flex-1 ">
-              <h1 className="text-stone-800 text-8xl font-bold mb-4 text-center ml-auto">TIK</h1>
-              <h2 className='text-center pr-8 pl-8'>TIK JAYA! JAYA! JAYA!</h2>
-            </div>
-            <div className="flex-1/2 ">
-              <img src={p4} alt="TIK" className="myImg mr-14 mb-6 rounded-md" />
-            </div>
-          </div>
+        <div className='bg-current'>
+
+        <Carousel/>
         </div>
-        <div className="h-screen bg-black border">
+        
+        <div className="h-screen bg-black border-w-4 border-blue-300">
           <section className="my-4">
             <h1 className="text-white text-4xl font-bold mb-2 text-center pt-8">Latest News & Info</h1>
             <h2 className="text-white text-center pt-2">Whats going on</h2>

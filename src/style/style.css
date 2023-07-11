@@ -18,3 +18,10 @@
 .myImg{
     height: 650px;
 }
+
+.text-with-black-outline {
+	color: white;
+	font-size: 65px;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
