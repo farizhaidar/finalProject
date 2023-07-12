@@ -15,7 +15,6 @@ const Paps = [
   { source: PX4, caption: "Kegiatan Mahasiswa" },
   { source: PX3, caption: "Kegiatan Mahasiswa" },
   { source: PX5, caption: "Kegiatan Mahasiswa" },
-  { source: "https://gallery.poskota.co.id/storage/Foto/santai-2.jpg", caption: "" },
   
 
 ]

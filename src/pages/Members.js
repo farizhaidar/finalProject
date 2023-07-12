@@ -12,7 +12,7 @@ const Members = () => {
         <div className="ml-4">
           <h3 className="font-bold text-xl">Fariz Haidar Zhaffran</h3>
           <p className="text-justify pt-4">
-            <i>"Genius, Billionaire, playboy, and philanthropist"</i> ~ Tony Stark. (bkn gw)
+            "Agus lapar, Buk" ~ Agus
           </p>
         </div>
       </div>
