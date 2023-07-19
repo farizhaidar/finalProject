@@ -6,7 +6,7 @@ const Members = () => {
   return (
     <div className="background1 h-screen pt-0 border">
       <h1 className="text-3xl font-semibold mt-9 text-center">Our Members</h1>
-
+      {/* Bagian fariz */}
       <div className="text-lg flex mx-32 my-10">
         <img src={p1} alt="" className="w-60 rounded-full" />
         <div className="ml-4">
@@ -17,6 +17,7 @@ const Members = () => {
         </div>
       </div>
 
+      {/* Bagian rani */}
       <div className="text-lg flex mx-32 my-14">
         <div className="mr-auto">
           <h3 className="text-right font-bold text-xl">Chairania Jasmine B</h3>
