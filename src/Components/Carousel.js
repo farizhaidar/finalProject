@@ -50,7 +50,7 @@ export const Carousel = () => {
               alt={`Slide ${index + 1}`}
             />
             {/* Menampilkan teks caption di atas gambar */}
-            <div className=" absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2  backdrop-blur-md text-white text-center">
+            <div className=" absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-white text-center">
               <h1 className="text-6xl font-bold ">{item.caption}</h1>
             </div>
           </div>
