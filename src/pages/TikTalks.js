@@ -64,10 +64,10 @@ const TikTalks = () => {
   };
 
   return (
-    // JSX untuk tampilan komponen TikTalks
+    //Tampilan menu tiktalks pada web
     <div className="mx-auto p-12 bg-neutral-200 min-h-screen">
       <h1 className="text-3xl font-bold mb-7 text-neutral-500"><span className=' text-5xl text-neutral-900'>AUTHOR</span> FORUM</h1>
-      {/* JSX untuk tampilan forum, input post, dan daftar post */}
+      {/* Tampilan input post */}
       <div className="flex flex-wrap ">
         <div className="w-full md:w-2/3 pr-4 mb-6 mt-9">
           <div className="mb-4">
@@ -82,15 +82,16 @@ const TikTalks = () => {
               onClick={addPost}
             >
               Post
-            </button> 
+            </button>
           </div>
 
+        {/* Mapping untuk daftar postingan yang sudah di posting */}
           {posts.map((post) => (
             <div key={post.id} className="mt-14 mb-7 p-4 hover:bg-gray-300 transition-colors duration-300">
               <p>{post.content}</p>
               <div className="flex items-center mt-3">
                 <button className="mr-3 mt-6" onClick={() => addLike(post.id)}>
-               ike   <img src={like} className="cursor-pointer" alt="like" /> ({post.ls})
+                  <img src={like} className="cursor-pointer" alt="like" /> ({post.likes})
                 </button>
                 <button className="mr-2 text-slate-800">
                   <img src={comment} className="cursor-pointer" alt="comment" />
@@ -116,6 +117,7 @@ const TikTalks = () => {
           ))}
         </div>
 
+        {/* Tampilan search post */}
         <div className="w-full md:w-1/3 pl-11">
           <div className="mt-0 mb-8 mr-1">
             <h2 className="text-xl font-bold mb-4"></h2>
