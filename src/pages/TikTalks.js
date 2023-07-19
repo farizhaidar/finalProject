@@ -3,11 +3,19 @@ import like from '../picture/thumbs-up.svg';
 import comment from '../picture/message-circle.svg';
 
 const TikTalks = () => {
+  // State untuk menyimpan daftar post yang ditampilkan di forum
   const [posts, setPosts] = useState([]);
+
+  // State untuk menyimpan teks dari post baru yang akan ditambahkan
   const [newPost, setNewPost] = useState('');
+
+  // State untuk menyimpan teks dari query pencarian
   const [searchQuery, setSearchQuery] = useState('');
+
+  // State untuk menyimpan daftar post terbaru yang sesuai dengan hasil pencarian
   const [recentPosts, setRecentPosts] = useState([]);
 
+  // Fungsi untuk menambahkan post baru ke dalam daftar 'posts'
   const addPost = () => {
     const newPostObj = {
       content: newPost,
@@ -19,6 +27,7 @@ const TikTalks = () => {
     setNewPost('');
   };
 
+  // Fungsi untuk menambahkan komentar ke dalam suatu post berdasarkan 'postId'
   const addComment = (postId, comment) => {
     const updatedPosts = posts.map((post) => {
       if (post.id === postId) {
@@ -32,6 +41,7 @@ const TikTalks = () => {
     setPosts(updatedPosts);
   };
 
+  // Fungsi untuk menambahkan jumlah 'likes' pada post berdasarkan 'postId'
   const addLike = (postId) => {
     const updatedPosts = posts.map((post) => {
       if (post.id === postId) {
@@ -45,6 +55,7 @@ const TikTalks = () => {
     setPosts(updatedPosts);
   };
 
+  // Fungsi untuk melakukan pencarian berdasarkan teks 'searchQuery' pada konten post
   const searchPosts = () => {
     const filteredPosts = posts.filter((post) =>
       post.content.toLowerCase().includes(searchQuery.toLowerCase())
@@ -53,9 +64,10 @@ const TikTalks = () => {
   };
 
   return (
+    // JSX untuk tampilan komponen TikTalks
     <div className="mx-auto p-12 bg-neutral-200 min-h-screen">
       <h1 className="text-3xl font-bold mb-7 text-neutral-500"><span className=' text-5xl text-neutral-900'>AUTHOR</span> FORUM</h1>
-
+      {/* JSX untuk tampilan forum, input post, dan daftar post */}
       <div className="flex flex-wrap ">
         <div className="w-full md:w-2/3 pr-4 mb-6 mt-9">
           <div className="mb-4">
@@ -70,7 +82,7 @@ const TikTalks = () => {
               onClick={addPost}
             >
               Post
-            </button>
+            </button> 
           </div>
 
           {posts.map((post) => (
@@ -78,7 +90,7 @@ const TikTalks = () => {
               <p>{post.content}</p>
               <div className="flex items-center mt-3">
                 <button className="mr-3 mt-6" onClick={() => addLike(post.id)}>
-                  <img src={like} className="cursor-pointer" alt="like" /> ({post.likes})
+               ike   <img src={like} className="cursor-pointer" alt="like" /> ({post.ls})
                 </button>
                 <button className="mr-2 text-slate-800">
                   <img src={comment} className="cursor-pointer" alt="comment" />
